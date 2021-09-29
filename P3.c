@@ -327,10 +327,6 @@ int main(int argc, char** argv) {
         T1CONbits.TMR1ON = 1;
         while(PORTCbits.RC1 == 1);
         T1CONbits.TMR1ON = 0;
-        
-        PORTA = 0b00000000;
-        PORTB = 0b00000000;
-        PORTD = 0b00000000;
                 
         // TCys to us
         float time = (float)TMR1_ReadTimer()/(float)6; // 1 TCy = 1/6 us
