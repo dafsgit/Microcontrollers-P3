@@ -89,42 +89,58 @@
  * 
  */
 
-
+// common catode instructions are commented
 void decode_seven_PORTD(int code){
     //assume display is wired to PORTD
     switch(code){
         //***************hgfedcba
-        case 0: PORTD = 0b00111111;
+        case 0: //PORTD = 0b00111111;
+                PORTD = 0b01000000;
                 break;
-        case 1: PORTD = 0b00000110;
+        case 1: //PORTD = 0b00000110;
+                PORTD = 0b01111001;
                 break;
-        case 2: PORTD = 0b01011011;
+        case 2: //PORTD = 0b01011011;
+                PORTD = 0b00100100;
                 break;
-        case 3: PORTD = 0b01001111;
+        case 3: //PORTD = 0b01001111;
+                PORTD = 0b00110000;
                 break;
-        case 4: PORTD = 0b01100110;
+        case 4: //PORTD = 0b01100110;
+                PORTD = 0b00011001;
                 break;
-        case 5: PORTD = 0b01101101;
+        case 5: //PORTD = 0b01101101;
+                PORTD = 0b00010010;
                 break;
-        case 6: PORTD = 0b01111101;
+        case 6: //PORTD = 0b01111101;
+                PORTD = 0b00000010;
                 break;
-        case 7: PORTD = 0b00000111;
+        case 7: //PORTD = 0b00000111;
+                PORTD = 0b01111000;
                 break;
-        case 8: PORTD = 0b01111111;
+        case 8: //PORTD = 0b01111111;
+                PORTD = 0b00000000;
                 break;
-        case 9: PORTD = 0b01101111;
+        case 9: //PORTD = 0b01101111;
+                PORTD = 0b00010000;
                 break;
-        case 10: PORTD = 0b01110111;
+        case 10: //PORTD = 0b01110111;
+                 PORTD = 0b00001000;
                 break;
-        case 11: PORTD = 0b01111100;
+        case 11: //PORTD = 0b01111100;
+                 PORTD = 0b00000011;
                 break;
-        case 12: PORTD = 0b00111001;
+        case 12: //PORTD = 0b00111001;
+                 PORTD = 0b01000110;
                 break;
-        case 13: PORTD = 0b01011110;
+        case 13: //PORTD = 0b01011110;
+                 PORTD = 0b00100001;
                 break;
-        case 14: PORTD = 0b01111001;
+        case 14: //PORTD = 0b01111001;
+                 PORTD = 0b00000110;
                 break;
-        case 15: PORTD = 0b01110001;
+        case 15: //PORTD = 0b01110001;
+                 PORTD = 0b00001110;
                 break;
     }
 }
@@ -133,37 +149,53 @@ void decode_seven_PORTA(int code){
     //assume display is wired to PORTA
     switch(code){
         //***************hgfedcba
-        case 0: PORTA = 0b00111111;
+        case 0: //PORTA = 0b00111111;
+                PORTA = 0b01000000;
                 break;
-        case 1: PORTA = 0b00000110;
+        case 1: //PORTA = 0b00000110;
+                PORTA = 0b01111001;
                 break;
-        case 2: PORTA = 0b01011011;
+        case 2: //PORTA = 0b01011011;
+                PORTA = 0b00100100;
                 break;
-        case 3: PORTA = 0b01001111;
+        case 3: //PORTA = 0b01001111;
+                PORTA = 0b00110000;
                 break;
-        case 4: PORTA = 0b01100110;
+        case 4: //PORTA = 0b01100110;
+                PORTA = 0b00011001;
                 break;
-        case 5: PORTA = 0b01101101;
+        case 5: //PORTA = 0b01101101;
+                PORTA = 0b00010010;
                 break;
-        case 6: PORTA = 0b01111101;
+        case 6: //PORTA = 0b01111101;
+                PORTA = 0b00000010;
                 break;
-        case 7: PORTA = 0b00000111;
+        case 7: //PORTA = 0b00000111;
+                PORTA = 0b01111000;
                 break;
-        case 8: PORTA = 0b01111111;
+        case 8: //PORTA = 0b01111111;
+                PORTA = 0b00000000;
                 break;
-        case 9: PORTA = 0b01101111;
+        case 9: //PORTA = 0b01101111;
+                PORTA = 0b00010000;
                 break;
-        case 10: PORTA = 0b01110111;
+        case 10: //PORTA = 0b01110111;
+                 PORTA = 0b00001000;
                 break;
-        case 11: PORTA = 0b01111100;
+        case 11: //PORTA = 0b01111100;
+                 PORTA = 0b00000011;
                 break;
-        case 12: PORTA = 0b00111001;
+        case 12: //PORTA = 0b00111001;
+                 PORTA = 0b01000110;
                 break;
-        case 13: PORTA = 0b01011110;
+        case 13: //PORTA = 0b01011110;
+                 PORTA = 0b00100001;
                 break;
-        case 14: PORTA = 0b01111001;
+        case 14: //PORTA = 0b01111001;
+                 PORTA = 0b00000110;
                 break;
-        case 15: PORTA = 0b01110001;
+        case 15: //PORTA = 0b01110001;
+                 PORTA = 0b00001110;
                 break;
     }
 }
@@ -172,37 +204,53 @@ void decode_seven_PORTB(int code){
     //assume display is wired to PORTB
     switch(code){
         //***************hgfedcba
-        case 0: PORTB = 0b10111111;
+        case 0: //PORTB = 0b00111111;
+                PORTB = 0b01000000;
                 break;
-        case 1: PORTB = 0b10000110;
+        case 1: //PORTB = 0b00000110;
+                PORTB = 0b01111001;
                 break;
-        case 2: PORTB = 0b11011011;
+        case 2: //PORTB = 0b01011011;
+                PORTB = 0b00100100;
                 break;
-        case 3: PORTB = 0b11001111;
+        case 3: //PORTB = 0b01001111;
+                PORTB = 0b00110000;
                 break;
-        case 4: PORTB = 0b11100110;
+        case 4: //PORTB = 0b01100110;
+                PORTB = 0b00011001;
                 break;
-        case 5: PORTB = 0b11101101;
+        case 5: //PORTB = 0b01101101;
+                PORTB = 0b00010010;
                 break;
-        case 6: PORTB = 0b11111101;
+        case 6: //PORTB = 0b01111101;
+                PORTB = 0b00000010;
                 break;
-        case 7: PORTB = 0b10000111;
+        case 7: //PORTB = 0b00000111;
+                PORTB = 0b01111000;
                 break;
-        case 8: PORTB = 0b11111111;
+        case 8: //PORTB = 0b01111111;
+                PORTB = 0b00000000;
                 break;
-        case 9: PORTB = 0b11101111;
+        case 9: //PORTB = 0b01101111;
+                PORTB = 0b00010000;
                 break;
-        case 10: PORTB = 0b11110111;
+        case 10: //PORTB = 0b01110111;
+                 PORTB = 0b00001000;
                 break;
-        case 11: PORTB = 0b11111100;
+        case 11: //PORTB = 0b01111100;
+                 PORTB = 0b00000011;
                 break;
-        case 12: PORTB = 0b10111001;
+        case 12: //PORTB = 0b00111001;
+                 PORTB = 0b01000110;
                 break;
-        case 13: PORTB = 0b11011110;
+        case 13: //PORTB = 0b01011110;
+                 PORTB = 0b00100001;
                 break;
-        case 14: PORTB = 0b11111001;
+        case 14: //PORTB = 0b01111001;
+                 PORTB = 0b00000110;
                 break;
-        case 15: PORTB = 0b11110001;
+        case 15: //PORTB = 0b01110001;
+                 PORTB = 0b00001110;
                 break;
     }
 }
@@ -263,7 +311,7 @@ int main(int argc, char** argv) {
     PIR1bits.TMR1IF = 0;
     PIE1bits.TMR1IE = 1;
     
-    T1CONbits.TMR1CS = 0; //idk
+    T1CONbits.TMR1CS = 0;
     T1CONbits.T1CKPS = 0b00;
     T1CONbits.T1SYNC = 1;
     T1CONbits.RD16 = 1;    
@@ -279,6 +327,10 @@ int main(int argc, char** argv) {
         T1CONbits.TMR1ON = 1;
         while(PORTCbits.RC1 == 1);
         T1CONbits.TMR1ON = 0;
+        
+        PORTA = 0b00000000;
+        PORTB = 0b00000000;
+        PORTD = 0b00000000;
                 
         // TCys to us
         float time = (float)TMR1_ReadTimer()/(float)6; // 1 TCy = 1/6 us
